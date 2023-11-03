@@ -1,0 +1,620 @@
+
+html{
+    width: 100vw;
+
+}
+/* ------------------------------ header classes */
+
+
+
+
+.header_body {
+
+    
+    display: flex;
+    flex-direction:column ;
+    /* background-image: url("./background.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto; */
+    background-image: linear-gradient(to right, #92fe9d 0%, #00c9ff 100%);
+    max-height: 100vh;
+    overflow: hidden;
+    /* background: white; */
+    overflow: hidden;
+    max-width: 100vw;
+    
+}
+
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* overflow: hidden; */
+    /* min-height: 100vh; */
+    max-height: 100vh;
+    /* min-height: 70vh; */
+    margin-top: 0.2em;
+
+}
+
+#zest24logo {
+    width: 160px;
+    margin: 15px;
+}
+
+.cyclo-logo {
+    font-size: 90px;
+    font-weight: 100;
+    font: poppins;
+}
+
+.title {
+    /* display: block; */
+    margin: 0.1em;
+    /* overflow: hidden; */
+    position: relative;
+    font-size: 48px;
+    /* left: 41%; */
+    width: max-content;
+    height: fit-content;
+    /* color: red; */
+
+    color: #f9689a;
+	text-shadow: -3px -3px 0 #77caff;
+
+    /* background: -webkit-linear-gradient(top,  #f9d400 15%,#f89b00 35%,#f9d400 70%); /* Chrome10+,Safari5.1+ */
+	/* -webkit-background-clip:text; */
+	/* -webkit-text-fill-color:transparent; */ 
+
+}
+
+.ourTheme h2, .markTheMoment h2{
+    margin: 0.5em 0em 0em 0em;
+    position: relative;
+    width: max-content;
+    height: fit-content;
+    font-size: 2em;
+
+
+    background: -webkit-linear-gradient(top,  #f9d400 15%,#f89b00 35%,#f9d400 70%);
+    -webkit-background-clip:text;
+    /* -webkit-text-fill-color:transparent;  */
+}
+
+
+.fitIndiaTitle{
+    color: #000000;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.20);
+    /* margin-bottom: 0.3em; */
+    text-transform: none;
+    font-size: 30px;
+}
+
+#fitIndia {
+
+    width:4em;
+}
+
+.header button{
+    width: auto;
+    padding: 0px 10px;
+}
+
+
+
+
+/*  --------------------------------------------------------Cycle animation classes */
+
+
+
+
+#path{
+    height: 200px;
+    width: 150%;
+    position: relative;
+    right: 250px;
+    bottom: 120px;
+    z-index: 10;
+}
+
+.cycleAndPath{
+    /* position: fixed; */
+    /* bottom: 0px; */
+    margin-bottom: -2em;
+    z-index: 100;
+}
+
+
+.cycle_animation {
+    display: flex;
+    /* overflow: hidden; */
+    flex-direction: row;
+    width: 100vw;
+    height: fit-content;
+    position: relative;
+    z-index: 20;
+    /* left: 1.9em; */
+    /* position: fixed; */
+    bottom: 50px;
+    /* margin-bottom: em; */
+}
+
+
+.cycle {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    flex-direction: row;
+    /* margin-bottom: 15px; */
+    width: 50%;
+    height: 50%;
+    transition: cubic-bezier(0, -0.99, 1, 2.14);
+}
+
+#cyclebody1 {
+    width: 367px;
+    position: relative;
+    z-index: 20;
+}
+
+#wheel1 {
+    position: relative;
+    width: 180px;
+    left: 150px;
+    top: 60px;
+}
+
+#wheel2 {
+    position: relative;
+    width: 180px;
+    right: 262px;
+    top: 60px;
+
+}
+
+
+#cyclepedal1 {
+    position: relative;
+    right: 232px;
+    top: 66px;
+    width: 138px;
+}
+
+
+#cyclebody2 {
+    width: 367px;
+    position: relative;
+    z-index: 20;
+    transform: scaleX(-1);
+}
+
+#wheel3 {
+    position: relative;
+    width: 180px;
+    left: 123px;
+    top: 60px;
+}
+
+#wheel4 {
+    position: relative;
+    width: 180px;
+    right: 287px;
+    top: 60px;
+}
+
+
+#cyclepedal2 {
+    position: relative;
+    right: 278px;
+    top: 64px;
+    width: 138px;
+    transform: scaleX(-1);
+}
+
+
+
+
+/*  Certificates Download */
+
+/* -------------------------------------- main body classes */
+
+
+
+
+
+
+
+
+.main_body {
+    margin-top: 8em;
+    width: 100%;
+    /* height: 100vh; */
+    /* background: white; */
+    /* position: relative; */
+    /* animation: moveup 1s ease-in-out; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    /* bottom: 107px; */
+    /* background: linear-gradient(90deg, rgba(2,0,0.6,1)0%, rgba(9,9,121,1)35%, rgba(0,212,255,1)100%); */
+}
+
+
+
+@keyframes fadeInGrow {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.themeDesc{
+    margin-top: 1em;
+    background: #edebffba;
+    padding: 1em 2em;
+    border-radius: 1.5em;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: none;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.themeText{
+    margin-top: 1em;    
+}
+
+
+
+
+/*@property --cost {
+	syntax: '<integer>';
+	initial-value: 0;
+	inherits: true
+}*/
+* {
+    margin: 0;
+    border: none;
+    /* background: transparent; */
+    color: inherit;
+    font: inherit;
+    text-transform: inherit;
+}
+
+/* body,
+body :not(script):not(style),
+::before {
+    display: grid;
+} */
+
+body {
+    /* grid-gap: 2em;
+    grid-template-columns: repeat(auto-fit, Min(100%, 12rem)); */
+    place-content: center;
+    /* min-height: 100vh; */
+    background: linear-gradient(90deg,rgba(2,0,6,1) 0%,rgba(9,9,121,1)35%, rgba(0,212,255,1));
+    
+    font: 900 1.25em/1.25 sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    /* overflow: hidden; */
+    /* max-height:30vh; */
+}
+
+article {
+    --m: calc(.5*(var(--n) - 1));
+    --abs: Max(calc(var(--i) - var(--m)), calc(var(--m) - var(--i)));
+    --val: calc(var(--abs)*(1 + .5*var(--i))/var(--n));
+    --dt0: calc(var(--val)*1s);
+    --dt1: calc((var(--val) + 1)*1s);
+    --dt2: calc((var(--val) + 1.5)*1s);
+    --dt3: calc((var(--val) + 2)*1s);
+    --dt4: calc((var(--val) + 2.5)*1s);
+    --dt5: calc((var(--val) + 3)*1s);
+    overflow: hidden;
+    margin: 3rem;
+    padding-bottom: 1rem;
+    backface-visibility: hidden;
+    transform: perspective(25em);
+    background: #fff content-box;
+    filter: drop-shadow(4px 4px 13px);
+    /* animation: card 1s ease-out var(--dt0) backwards, cost 1s var(--dt4) backwards; */
+    width: 300px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items:center */
+    /* justify-content: center; */
+
+}
+
+article ::before,
+article ::after,
+article button {
+    --j: 1;
+    --sgn-j: calc(2*var(--j) - 1);
+    --not-j: calc(1 - var(--j));
+    --mask:
+        linear-gradient(calc(var(--sgn-j)*90deg),
+            red 33.333%, transparent 66.667%) calc(var(--not-j)*100%)/ 300%;
+}
+
+.text-head {
+    grid-gap: 1rem;
+    padding: 1rem 0.5em 1rem;
+    transform-origin: 100% 100%;
+    background: linear-gradient(var(--grad));
+    color: #fff;
+    counter-reset: cost var(--cost);
+}
+
+.text-head::before {
+    place-self: center;
+    place-content: center;
+    /* border: solid 4px currentcolor; */
+    width: 2rem;
+    height: 2rem;
+    /* border-radius: 50%; */
+    content: var(--cost);
+    /* Replace this with the Font Awesome class for your desired icon */
+    font-family: "Font Awesome 5 Free";
+    /* Specify the Font Awesome font family */
+    font-size: 2rem;
+    /* Adjust the size of the icon as needed */
+}
+
+.text-head::after {
+    height: 4px;
+    background: currentcolor;
+    clip-path: inset(0 round 4px);
+    content: "";
+}
+
+
+
+h3::before,
+h3::after {
+    place-self: center;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+    animation: text 1s ease-out var(--dt5) backwards;
+}
+
+h3::before {
+    --j: 0;
+    animation-name: text, move;
+    content: attr(data-name);
+}
+
+h3::after {
+    font-size: 0.6em;
+    font-weight: 100;
+    content: var(--textdata);
+}
+
+
+
+section {
+    margin-bottom: -1rem;
+    border-bottom: solid 1rem transparent;
+    background-color: inherit;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 1rem), 50% 100%, 0 calc(100% - 1rem));
+
+}
+
+button {
+    place-content: center;
+    line-height: 3;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+    cursor: pointer;
+    margin: auto auto;
+}
+
+
+
+.animate-card {
+    animation: cardanim 1s ease-out var(--dt0) backwards, cost 1s var(--dt4) backwards;
+}
+
+
+.animate-head {
+    animation: head 1s ease-out var(--dt1) backwards;
+}
+
+.animate-head::before {
+    animation: ring 1s ease-out var(--dt3) backwards;
+
+}
+
+.animate-head::after {
+    animation: line 1s ease-out var(--dt2) backwards;
+
+}
+
+.animate-section button {
+    animation: text 1.4s ease-out var(--dt0) backwards;
+}
+
+@keyframes cardanim {
+    0% {
+        transform: perspective(25em) rotatey(0.5turn);
+    }
+}
+
+
+@keyframes head {
+    0% {
+        transform: translate(-100%) skewx(35deg);
+    }
+}
+
+@keyframes ring {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+
+
+@keyframes line {
+    0% {
+        clip-path: inset(0 50% round 4px);
+    }
+}
+
+
+@keyframes move {
+    0% {
+        transform: translate(50%);
+    }
+}
+
+
+
+@keyframes text {
+    0% {
+        -webkit-mask-position: calc(var(--j)*100%);
+        mask-position: calc(var(--j)*100%);
+    }
+}
+
+
+.card-container {
+    /* background-color: #92fe9d; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    /* margin-bottom: 50em; */
+}
+
+.cardsMark{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: wrap;
+}
+
+/* FOOTER   */
+
+footer{
+    text-transform: none;
+}
+
+.row h5{
+    font-weight: 600;
+    
+}
+.social{
+    text-decoration: none;
+}
+
+.head1 .head2 .head3{
+    margin-top: 20px;
+}
+
+
+@media only screen and (max-width:900px){
+    .themeDesc{
+        width: 100vw;
+    }
+    .cycleAndPath{
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width : 1100px){
+
+    .cycle2{
+        visibility: hidden;
+    }
+
+    #path{
+        margin-left: 6em;
+    }
+    .header{
+        margin-top: 3em;
+    }
+    .cycleAndPath{
+        margin-top: 2em;
+    }
+}
+
+@media only screen and (max-width : 600px){
+
+    .cycle1{
+        
+        margin-left:-4em;
+    }
+
+
+}
+
+@media only screen and (max-width : 520px){
+
+
+
+    .cyclo-logo{
+        font-size: 50px;
+        font-weight: 500;
+    }
+
+    h2{
+        margin: 10px 0px;
+        font-size: 30px;
+    }
+
+    .title{
+        max-width: 100vw;
+    }
+    .themeText{
+        padding: 0px 30px;
+        width: 100vw;
+    }
+    .cycle1{
+        margin-left:-6em;
+    }
+
+    #fitIndia{
+        margin-top: 15px;
+        width: 90px;
+    }
+
+    #card-container{
+        margin-top: -150px;
+    }
+
+    .row h5{
+        font-size: 20px;
+    }
+
+   
+
+    #path{
+        height: 150px;
+        bottom: 50px;
+
+    }
+
+    .cycle_animation {
+        bottom: 5px;
+    }
+}
